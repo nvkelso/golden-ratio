@@ -23,7 +23,7 @@ Initial version uses Twitter geotagged tweet density "binary world" bounding box
 
 http://www.flickr.com/photos/walkingsf/6159680639/in/photostream/
 
-Later versions will include more proxies and refine the regions and country tagging.
+Later versions will include more proxies and refine the regions and country tagging. Also the ability to reference past tile view history (popularity) logs in addition to the existing forecasting ability.
 
 You should see savings of 80% to 99% in which tiles get rendered from zoom 11 in.
 
