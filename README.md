@@ -1,6 +1,6 @@
 ![Zoom previews](https://github.com/nvkelso/golden-ratio/raw/master/images/zoom_start_east_coast.png)
 
-_Explanation: Greys = zooms 10 + 11, green = 12, light green = 13, yellow = 14, orange = 15, dark orange = 16, pink = 17, dark red = 18+_
+_Legend: Grays = zooms 10 + 11, green = 12, light green = 13, yellow = 14, orange = 15, dark orange = 16, pink = 17, dark red = 18+_
 
 **When pre-rendering the whole world is too much, render less. But which less?**
 
