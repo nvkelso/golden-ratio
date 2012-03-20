@@ -1,0 +1,7 @@
+{ "type": "FeatureCollection", "features": [
+        { "geometry": { "type": "Polygon", "coordinates": [ [ [-180,-85.0511],[-180,85.0511],[180,85.0511],[180,-85.0511],[-180,-85.0511] ] ] },
+          "type": "Feature", 
+          "properties": { "value": 1, "bottom":-85.0511, "left":-180.0, "right":180.0, "top":85.0511, "origFID":1} 
+        }
+    ]
+}
