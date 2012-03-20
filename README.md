@@ -1,6 +1,8 @@
 ![Zoom previews](https://github.com/nvkelso/golden-ratio/raw/master/images/zoom_start_nor_cal.png)
 
-When pre-rendering the whole world is too much, render less. But which less? 
+_Image explanation: Red = zoom 10, orange = zoom 11, yellow = zoom 12, green = zoom 13/14, blue = zoom 15+_
+
+**When pre-rendering the whole world is too much, render less. But which less?**
 
 Land versus ocean is a basic proxy. But population and internet usage should also factor in.
 
