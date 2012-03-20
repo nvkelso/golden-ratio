@@ -8,18 +8,18 @@ Land versus ocean is a basic proxy. But population and internet usage should als
 
 We proxy which tiles are important by looking at:
 
+* Twitter Geocoded tweets
 * Flickr photo sharing
 * GeoIP addresses
-* Twitter Geocoded tweets
 * General population density
 
-This first version is just for Flickr proxy.
+This first version is just for Twitter proxy.
 
 The data you want is in:
 
-* data/flickr_bbox.tsv
+* data/twitter_bbox.tsv
 
-Initial version uses Flickr photo density "binary world" bounding boxes curtesey of Eric Fischer.
+Initial version uses Twitter geotagged tweet density "binary world" bounding boxes curtsey of Eric Fischer.
 
 http://www.flickr.com/photos/walkingsf/6159680639/in/photostream/
 
