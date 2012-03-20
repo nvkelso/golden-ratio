@@ -26,3 +26,5 @@ http://www.flickr.com/photos/walkingsf/6159680639/in/photostream/
 Later versions will include more proxies and refine the regions and country tagging.
 
 You should see savings of 80% to 99% in which tiles get rendered from zoom 11 in.
+
+For more image previews, see: http://www.flickr.com/photos/ke6cat/sets/72157629625222031/
