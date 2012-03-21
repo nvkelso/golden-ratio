@@ -4,10 +4,10 @@
     <mapcanvas>
         <units>meters</units>
         <extent>
-            <xmin>-14298764.507861</xmin>
-            <ymin>3554688.262925</ymin>
-            <xmax>-12148582.799492</xmax>
-            <ymax>5103108.517297</ymax>
+            <xmin>-8965402.333588</xmin>
+            <ymin>4456853.296083</ymin>
+            <xmax>-8128212.504988</xmax>
+            <ymax>5059742.662277</ymax>
         </extent>
         <projections>1</projections>
         <destinationsrs>
@@ -214,12 +214,16 @@
                     <category symbol="1" value="11" label="11"/>
                     <category symbol="2" value="12" label="12"/>
                     <category symbol="3" value="13" label="13"/>
-                    <category symbol="4" value="15" label="15"/>
+                    <category symbol="4" value="14" label="14"/>
+                    <category symbol="5" value="15" label="15"/>
+                    <category symbol="6" value="16" label="16"/>
+                    <category symbol="7" value="17" label="17"/>
+                    <category symbol="8" value="18" label="18"/>
                 </categories>
                 <symbols>
                     <symbol outputUnit="MM" alpha="1" type="fill" name="0">
                         <layer pass="0" class="SimpleFill" locked="0">
-                            <prop k="color" v="215,25,28,255"/>
+                            <prop k="color" v="213,62,79,255"/>
                             <prop k="color_border" v="0,0,0,255"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="style" v="solid"/>
@@ -229,7 +233,7 @@
                     </symbol>
                     <symbol outputUnit="MM" alpha="1" type="fill" name="1">
                         <layer pass="0" class="SimpleFill" locked="0">
-                            <prop k="color" v="253,174,97,255"/>
+                            <prop k="color" v="244,109,67,255"/>
                             <prop k="color_border" v="0,0,0,255"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="style" v="solid"/>
@@ -239,7 +243,7 @@
                     </symbol>
                     <symbol outputUnit="MM" alpha="1" type="fill" name="2">
                         <layer pass="0" class="SimpleFill" locked="0">
-                            <prop k="color" v="255,255,191,255"/>
+                            <prop k="color" v="253,174,97,255"/>
                             <prop k="color_border" v="0,0,0,255"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="style" v="solid"/>
@@ -249,7 +253,7 @@
                     </symbol>
                     <symbol outputUnit="MM" alpha="1" type="fill" name="3">
                         <layer pass="0" class="SimpleFill" locked="0">
-                            <prop k="color" v="171,221,164,255"/>
+                            <prop k="color" v="254,224,139,255"/>
                             <prop k="color_border" v="0,0,0,255"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="style" v="solid"/>
@@ -259,7 +263,47 @@
                     </symbol>
                     <symbol outputUnit="MM" alpha="1" type="fill" name="4">
                         <layer pass="0" class="SimpleFill" locked="0">
-                            <prop k="color" v="43,131,186,255"/>
+                            <prop k="color" v="255,255,191,255"/>
+                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="style" v="solid"/>
+                            <prop k="style_border" v="solid"/>
+                            <prop k="width_border" v="0.26"/>
+                        </layer>
+                    </symbol>
+                    <symbol outputUnit="MM" alpha="1" type="fill" name="5">
+                        <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="color" v="230,245,152,255"/>
+                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="style" v="solid"/>
+                            <prop k="style_border" v="solid"/>
+                            <prop k="width_border" v="0.26"/>
+                        </layer>
+                    </symbol>
+                    <symbol outputUnit="MM" alpha="1" type="fill" name="6">
+                        <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="color" v="171,221,164,255"/>
+                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="style" v="solid"/>
+                            <prop k="style_border" v="solid"/>
+                            <prop k="width_border" v="0.26"/>
+                        </layer>
+                    </symbol>
+                    <symbol outputUnit="MM" alpha="1" type="fill" name="7">
+                        <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="color" v="102,194,165,255"/>
+                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="style" v="solid"/>
+                            <prop k="style_border" v="solid"/>
+                            <prop k="width_border" v="0.26"/>
+                        </layer>
+                    </symbol>
+                    <symbol outputUnit="MM" alpha="1" type="fill" name="8">
+                        <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="color" v="50,136,189,255"/>
                             <prop k="color_border" v="0,0,0,255"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="style" v="solid"/>
@@ -281,7 +325,7 @@
                     </symbol>
                 </source-symbol>
                 <colorramp type="colorbrewer" name="[source]">
-                    <prop k="colors" v="5"/>
+                    <prop k="colors" v="9"/>
                     <prop k="schemeName" v="Spectral"/>
                 </colorramp>
                 <rotation field=""/>
