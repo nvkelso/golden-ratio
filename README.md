@@ -13,6 +13,8 @@ We proxy which tiles are important by looking at:
 * GeoIP addresses
 * General population density
 
+[READ MORE on the Stamen blog about Log Maps »](http://content.stamen.com/log_maps)
+
 This first version is just for Twitter proxy.
 
 The data you want is in:
