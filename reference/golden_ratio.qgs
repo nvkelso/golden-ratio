@@ -1,13 +1,13 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis projectname="" version="1.7.1-Wroclaw">
+<qgis projectname="" version="1.7.0-Wroclaw">
     <title></title>
     <mapcanvas>
         <units>meters</units>
         <extent>
             <xmin>-8965402.333588</xmin>
-            <ymin>4456853.296083</ymin>
+            <ymin>4401489.801986</ymin>
             <xmax>-8128212.504988</xmax>
-            <ymax>5059742.662277</ymax>
+            <ymax>5115106.156374</ymax>
         </extent>
         <projections>1</projections>
         <destinationsrs>
@@ -63,7 +63,7 @@
     <projectlayers layercount="7">
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="Polygon" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>flickr_bbox20120319130544151</id>
-            <datasource>/Users/nvkelso/github/golden-ratio/reference/flickr_bbox.shp</datasource>
+            <datasource>/Users/nvkelso2/git-repos/golden-ratio/reference/twitter_bbox/twitter_bbox.shp</datasource>
             <layername>flickr_bbox</layername>
             <srs>
                 <spatialrefsys>
@@ -80,7 +80,7 @@
             <transparencyLevelInt>255</transparencyLevelInt>
             <provider encoding="UTF-8">ogr</provider>
             <vectorjoins>
-                <join targetField="5" joinField="5" memoryCache="1" joinLayerId="flickr_bbox_centroids_join220120319145020833"/>
+                <join targetField="5" joinField="5" memoryCache="0" joinLayerId="flickr_bbox_centroids_join220120319145020833"/>
             </vectorjoins>
             <renderer-v2 symbollevels="0" type="singleSymbol">
                 <symbols>
@@ -128,7 +128,7 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="Point" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>flickr_bbox_centroids_join220120319145020833</id>
-            <datasource>/Users/nvkelso/github/golden-ratio/reference/flickr_bbox_centroids_join2.shp</datasource>
+            <datasource>/Users/nvkelso2/git-repos/golden-ratio/reference/twitter_bbox/twitter_bbox_centroids_join2.shp</datasource>
             <layername>flickr_bbox_centroids_join2</layername>
             <srs>
                 <spatialrefsys>
@@ -191,7 +191,7 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="Polygon" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>flickr_bbox_join8_redux_poly_area1_clip_merc_area220120319174055602</id>
-            <datasource>/Users/nvkelso/github/golden-ratio/reference/flickr_bbox_join8_redux_poly_area1_clip_merc_area2.shp</datasource>
+            <datasource>/Users/nvkelso2/git-repos/golden-ratio/reference/twitter_bbox/twitter_bbox_join8_redux_poly_area1_clip_merc_area2.shp</datasource>
             <layername>flickr_bbox_join8_redux_poly_area1_clip_merc_area2</layername>
             <srs>
                 <spatialrefsys>
@@ -402,7 +402,7 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="Polygon" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>ne_10m_admin_0_countries20120319125632527</id>
-            <datasource>/Users/nvkelso/github/golden-ratio/reference/natural_earth_data/ne_10m_admin_0_countries.shp</datasource>
+            <datasource>/Users/nvkelso2/git-repos/golden-ratio/reference/natural_earth_data/ne_10m_admin_0_countries.shp</datasource>
             <layername>ne_10m_admin_0_countries</layername>
             <srs>
                 <spatialrefsys>
@@ -498,7 +498,7 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+07" geometry="Point" type="vector" hasScaleBasedVisibilityFlag="1">
             <id>ne_10m_populated_places20120319192523957</id>
-            <datasource>/Users/nvkelso/github/golden-ratio/reference/natural_earth_data/ne_10m_populated_places.shp</datasource>
+            <datasource>/Users/nvkelso2/git-repos/golden-ratio/reference/natural_earth_data/ne_10m_populated_places.shp</datasource>
             <layername>ne_10m_populated_places</layername>
             <srs>
                 <spatialrefsys>
@@ -702,7 +702,7 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="Polygon" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>ne_50m_geography_regions_polys_biggest20120319130021823</id>
-            <datasource>/Users/nvkelso/github/golden-ratio/reference/natural_earth_data/ne_50m_geography_regions_polys_biggest.shp</datasource>
+            <datasource>/Users/nvkelso2/git-repos/golden-ratio/reference/natural_earth_data/ne_50m_geography_regions_polys_biggest.shp</datasource>
             <layername>ne_50m_geography_regions_polys_biggest</layername>
             <srs>
                 <spatialrefsys>
@@ -765,7 +765,7 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="Polygon" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>zoom_00_tiles_wgs8420120319173049438</id>
-            <datasource>/Users/nvkelso/github/golden-ratio/reference/tile_zooms/polys/zoom_00_tiles_wgs84.geojson</datasource>
+            <datasource>/Users/nvkelso2/git-repos/golden-ratio/reference/tile_zooms/polys/zoom_00_tiles_wgs84.geojson</datasource>
             <layername>OGRGeoJSON</layername>
             <srs>
                 <spatialrefsys>
