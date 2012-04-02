@@ -1,0 +1,40 @@
+ArcGIS Fishnet was used to calculate the tile boundaries.
+
+The VBA to calculate the rows and columns (as only the shape is returned starting from the bottom left) is:
+
+(Example assumes zoom 4)
+
+
+cell_index = [Id]zoom_tile_width_count = 16row_native = Fix( cell_index / zoom_tile_width_count )row_tms = zoom_tile_width_count - row_native - 1column = cell_index Mod zoom_tile_width_count tms_coord = [zoom] & "/" & [column] & "/" & [row]
+
+(Example assumes zoom 10 quadrant lower-left)
+
+cell_index = [Id]zoom_tile_width_count = 512zoom = 10offset_row = 512offset_column = 0row_native = Fix( cell_index / zoom_tile_width_count )row_tms = offset_row + zoom_tile_width_count - row_native - 1column = offset_column + cell_index Mod zoom_tile_width_count tms_coord = [zoom] & "/" & [column] & "/" & [row]
+
+NOTE: Only zooms up to and including zoom 9 can be calculated with Fishnet using the basic settings. After that you need to calculate by quadrant then quarter quadrant and so on. This is because there is a limit to the number of columns the software will generate.
+
+NOTE: Fix() is the VBA equivalent of Math.floor. Mod is the VBA keyword for % modulus (remainder after division).
+
+zoom_tile_width_count is taken from the following table (2^zoom):
+
+zoom	tile_width 
+19	524,288 
+18	262,144 
+17	131,072 
+16	65,536 
+15	32,768 
+14	16,384 
+13	8,192 
+12	4,096 
+11	2,048 
+10	1,024 
+9	512
+8	256
+7	128
+6	64
+5	32
+4	16
+3	8
+2	4
+1	2
+0	1
