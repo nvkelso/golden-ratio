@@ -1,6 +1,6 @@
 Map
 {
-    map-bgcolor: #000;
+    map-bgcolor: #fff;
 }
 
 .country-shapes-50m[zoom<=5]
@@ -8,6 +8,7 @@ Map
     line-color: #000;
     line-cap: round;
     line-join: round;
+  	line-width: 0.5; 
 }
 
 .country-shapes-10m[zoom>5]
@@ -15,6 +16,7 @@ Map
     line-color: #000;
     line-cap: round;
     line-join: round;
+  	line-width: 0.5; 
 }
 
 /*
