@@ -1,62 +1,82 @@
-<Map background-color="rgb(0,0,0)" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
-  <Style name="polygon style 13">
+<Map background-color="rgb(255,255,255)" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
+  <Style name="line style 11">
+    <Rule name="rule 2">
+      <MaxScaleDenominator>12499999</MaxScaleDenominator>
+      <LineSymbolizer>
+        <CssParameter name="stroke-width">0.5</CssParameter>
+        <CssParameter name="stroke-linejoin">round</CssParameter>
+        <CssParameter name="stroke-linecap">round</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+  </Style>
+  <Style name="line style 4">
     <Rule name="rule 1">
+      <MinScaleDenominator>12500000</MinScaleDenominator>
+      <LineSymbolizer>
+        <CssParameter name="stroke-width">0.5</CssParameter>
+        <CssParameter name="stroke-linejoin">round</CssParameter>
+        <CssParameter name="stroke-linecap">round</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+  </Style>
+  <Style name="polygon style 15">
+    <Rule name="rule 3">
       <Filter>([zoom_start]=10)</Filter>
       <MaxScaleDenominator>49999999</MaxScaleDenominator>
       <PolygonSymbolizer>
         <CssParameter name="fill">rgb(203,219,62)</CssParameter>
       </PolygonSymbolizer>
     </Rule>
-    <Rule name="rule 2">
+    <Rule name="rule 4">
       <Filter>([zoom_start]=11)</Filter>
       <MaxScaleDenominator>49999999</MaxScaleDenominator>
       <PolygonSymbolizer>
         <CssParameter name="fill">rgb(255,242,69)</CssParameter>
       </PolygonSymbolizer>
     </Rule>
-    <Rule name="rule 3">
+    <Rule name="rule 5">
       <Filter>([zoom_start]=12)</Filter>
       <MaxScaleDenominator>49999999</MaxScaleDenominator>
       <PolygonSymbolizer>
         <CssParameter name="fill">rgb(255,183,47)</CssParameter>
       </PolygonSymbolizer>
     </Rule>
-    <Rule name="rule 4">
+    <Rule name="rule 6">
       <Filter>([zoom_start]=13)</Filter>
       <MaxScaleDenominator>49999999</MaxScaleDenominator>
       <PolygonSymbolizer>
         <CssParameter name="fill">rgb(226,102,75)</CssParameter>
       </PolygonSymbolizer>
     </Rule>
-    <Rule name="rule 5">
+    <Rule name="rule 7">
       <Filter>([zoom_start]=14)</Filter>
       <MaxScaleDenominator>49999999</MaxScaleDenominator>
       <PolygonSymbolizer>
         <CssParameter name="fill">rgb(253,86,191)</CssParameter>
       </PolygonSymbolizer>
     </Rule>
-    <Rule name="rule 6">
+    <Rule name="rule 8">
       <Filter>([zoom_start]=15)</Filter>
       <MaxScaleDenominator>49999999</MaxScaleDenominator>
       <PolygonSymbolizer>
         <CssParameter name="fill">rgb(117,16,0)</CssParameter>
       </PolygonSymbolizer>
     </Rule>
-    <Rule name="rule 7">
+    <Rule name="rule 9">
       <Filter>([zoom_start]=16)</Filter>
       <MaxScaleDenominator>49999999</MaxScaleDenominator>
       <PolygonSymbolizer>
         <CssParameter name="fill">rgb(83,0,39)</CssParameter>
       </PolygonSymbolizer>
     </Rule>
-    <Rule name="rule 8">
+    <Rule name="rule 10">
       <Filter>([zoom_start]=17)</Filter>
       <MaxScaleDenominator>49999999</MaxScaleDenominator>
       <PolygonSymbolizer>
         <CssParameter name="fill">rgb(40,0,58)</CssParameter>
       </PolygonSymbolizer>
     </Rule>
-    <Rule name="rule 9">
+    <Rule name="rule 11">
       <Filter>([zoom_start]=18)</Filter>
       <MaxScaleDenominator>49999999</MaxScaleDenominator>
       <PolygonSymbolizer>
@@ -64,8 +84,32 @@
       </PolygonSymbolizer>
     </Rule>
   </Style>
-  <Layer name="layer 19" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
-    <StyleName>polygon style 13</StyleName>
+  <Layer name="layer 7" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
+    <StyleName>line style 4</StyleName>
+    <Datasource>
+      <Parameter name="dbname">naturalearth1.1_merc</Parameter>
+      <Parameter name="estimate_extent">false</Parameter>
+      <Parameter name="extent">-20037508,-20037508,20037508,20037508</Parameter>
+      <Parameter name="host">localhost</Parameter>
+      <Parameter name="table">admin_0_countries_50m</Parameter>
+      <Parameter name="type">postgis</Parameter>
+      <Parameter name="user">nev</Parameter>
+    </Datasource>
+  </Layer>
+  <Layer name="layer 14" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
+    <StyleName>line style 11</StyleName>
+    <Datasource>
+      <Parameter name="dbname">naturalearth1.1_merc</Parameter>
+      <Parameter name="estimate_extent">false</Parameter>
+      <Parameter name="extent">-20037508,-20037508,20037508,20037508</Parameter>
+      <Parameter name="host">localhost</Parameter>
+      <Parameter name="table">admin_0_countries_10m</Parameter>
+      <Parameter name="type">postgis</Parameter>
+      <Parameter name="user">nev</Parameter>
+    </Datasource>
+  </Layer>
+  <Layer name="layer 21" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
+    <StyleName>polygon style 15</StyleName>
     <Datasource>
       <Parameter name="file">/home/nate/public_html/golden-ratio/reference/twitter_bbox/twitter_bbox_join8_redux_poly_area1_clip_merc_area2</Parameter>
       <Parameter name="type">shape</Parameter>
