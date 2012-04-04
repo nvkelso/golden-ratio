@@ -1,0 +1,74 @@
+<Map background-color="rgb(0,0,0)" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
+  <Style name="polygon style 13">
+    <Rule name="rule 1">
+      <Filter>([zoom_start]=10)</Filter>
+      <MaxScaleDenominator>49999999</MaxScaleDenominator>
+      <PolygonSymbolizer>
+        <CssParameter name="fill">rgb(203,219,62)</CssParameter>
+      </PolygonSymbolizer>
+    </Rule>
+    <Rule name="rule 2">
+      <Filter>([zoom_start]=11)</Filter>
+      <MaxScaleDenominator>49999999</MaxScaleDenominator>
+      <PolygonSymbolizer>
+        <CssParameter name="fill">rgb(255,242,69)</CssParameter>
+      </PolygonSymbolizer>
+    </Rule>
+    <Rule name="rule 3">
+      <Filter>([zoom_start]=12)</Filter>
+      <MaxScaleDenominator>49999999</MaxScaleDenominator>
+      <PolygonSymbolizer>
+        <CssParameter name="fill">rgb(255,183,47)</CssParameter>
+      </PolygonSymbolizer>
+    </Rule>
+    <Rule name="rule 4">
+      <Filter>([zoom_start]=13)</Filter>
+      <MaxScaleDenominator>49999999</MaxScaleDenominator>
+      <PolygonSymbolizer>
+        <CssParameter name="fill">rgb(226,102,75)</CssParameter>
+      </PolygonSymbolizer>
+    </Rule>
+    <Rule name="rule 5">
+      <Filter>([zoom_start]=14)</Filter>
+      <MaxScaleDenominator>49999999</MaxScaleDenominator>
+      <PolygonSymbolizer>
+        <CssParameter name="fill">rgb(253,86,191)</CssParameter>
+      </PolygonSymbolizer>
+    </Rule>
+    <Rule name="rule 6">
+      <Filter>([zoom_start]=15)</Filter>
+      <MaxScaleDenominator>49999999</MaxScaleDenominator>
+      <PolygonSymbolizer>
+        <CssParameter name="fill">rgb(117,16,0)</CssParameter>
+      </PolygonSymbolizer>
+    </Rule>
+    <Rule name="rule 7">
+      <Filter>([zoom_start]=16)</Filter>
+      <MaxScaleDenominator>49999999</MaxScaleDenominator>
+      <PolygonSymbolizer>
+        <CssParameter name="fill">rgb(83,0,39)</CssParameter>
+      </PolygonSymbolizer>
+    </Rule>
+    <Rule name="rule 8">
+      <Filter>([zoom_start]=17)</Filter>
+      <MaxScaleDenominator>49999999</MaxScaleDenominator>
+      <PolygonSymbolizer>
+        <CssParameter name="fill">rgb(40,0,58)</CssParameter>
+      </PolygonSymbolizer>
+    </Rule>
+    <Rule name="rule 9">
+      <Filter>([zoom_start]=18)</Filter>
+      <MaxScaleDenominator>49999999</MaxScaleDenominator>
+      <PolygonSymbolizer>
+        <CssParameter name="fill">rgb(5,5,5)</CssParameter>
+      </PolygonSymbolizer>
+    </Rule>
+  </Style>
+  <Layer name="layer 19" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
+    <StyleName>polygon style 13</StyleName>
+    <Datasource>
+      <Parameter name="file">/home/nate/public_html/golden-ratio/reference/twitter_bbox/twitter_bbox_join8_redux_poly_area1_clip_merc_area2</Parameter>
+      <Parameter name="type">shape</Parameter>
+    </Datasource>
+  </Layer>
+</Map>
