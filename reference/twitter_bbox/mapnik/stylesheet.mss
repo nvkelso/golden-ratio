@@ -39,12 +39,12 @@ Map
 "rgb(5,5,5)" // 18
 */
 
-.golden-ratio[zoom>3][zoom_start=10] { polygon-color: #cbdb3e; }
-.golden-ratio[zoom>3][zoom_start=11] { polygon-color: #fff245; }
-.golden-ratio[zoom>3][zoom_start=12] { polygon-color: #ffb72f; }
-.golden-ratio[zoom>3][zoom_start=13] { polygon-color: #e2664b; }
-.golden-ratio[zoom>3][zoom_start=14] { polygon-color: #fd56bf; }
-.golden-ratio[zoom>3][zoom_start=15] { polygon-color: #751000; }
-.golden-ratio[zoom>3][zoom_start=16] { polygon-color: #530027; }
-.golden-ratio[zoom>3][zoom_start=17] { polygon-color: #28003a; }
-.golden-ratio[zoom>3][zoom_start=18] { polygon-color: #050505; }
+.golden-ratio[zoom>3][zoom_start=10] { polygon-fill: #cbdb3e; }
+.golden-ratio[zoom>3][zoom_start=11] { polygon-fill: #fff245; }
+.golden-ratio[zoom>3][zoom_start=12] { polygon-fill: #ffb72f; }
+.golden-ratio[zoom>3][zoom_start=13] { polygon-fill: #e2664b; }
+.golden-ratio[zoom>3][zoom_start=14] { polygon-fill: #fd56bf; }
+.golden-ratio[zoom>3][zoom_start=15] { polygon-fill: #751000; }
+.golden-ratio[zoom>3][zoom_start=16] { polygon-fill: #530027; }
+.golden-ratio[zoom>3][zoom_start=17] { polygon-fill: #28003a; }
+.golden-ratio[zoom>3][zoom_start=18] { polygon-fill: #050505; }
