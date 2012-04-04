@@ -47,7 +47,7 @@ renders/gr_china2.png: style.xml
 	python mapnik-render.py -f fonts -s style.xml -l 31.36 109.66 -z 4 -d 1824 1568 -o $@
 
 renders/gr_northerneurope.png: style.xml
-	python mapnik-render.py -f fonts -s style.xml -l 50.96 12.63 -z 4 -d 1824 1568 -o $@
+	python mapnik-render.py -f fonts -s style.xml -l 50.96 12.63 -z 5 -d 1824 1568 -o $@
 
 renders/gr_germany.png: style.xml
 	python mapnik-render.py -f fonts -s style.xml -l 50.905 10.015 -z 5 -d 1824 1568 -o $@
