@@ -45,37 +45,56 @@ You should see savings of 80% to 99% in which tiles get rendered from zoom 11 in
 
 # Tools
 
-countTiles
+##seed_splitter
 
-##Usage:
+Have 16 cores on your machine or need to render in the cloud? Split your large task list into accomplishable bits.
 
-$ `python countTiles.py`
+###Usage:
 
-##Default output for US (excluding Alaska and Hawaii):
+    python seed_splitter.py <filename> <num_parts>
+    
+Where `<num_parts>` might be the number of cores on your machine minus 1 (eg: 16-1=5).
 
-Geographic area:
-	-126.900000	    left most Longitude     (minLong)
-	  22.200000	    bottom most Latitude    (minLat)
-	 -67.200000	    right most Longitude    (maxLong)
-	  50.000000	    top most Latitude       (maxLat)
-Zoom coverage:
-	4	least detailed zoom
-	14	most detailed zoom
-Total tiles:
-	5,799,459 > 10,000,000
+##seed_parser
 
-SETUP cost: $71.74
-(One time cost: $13.75 storage, $57.99 posting)
-(Note: If there is a data update, apply this setup cost again.)
+###Usage:
 
-MONTHLY viewing costs:
-      10,000 visits: $    6.46,   with cloudfront: $    12.92
-     250,000 visits: $  164.32,   with cloudfront: $   328.64
-   1,000,000 visits: $  657.64,   with cloudfront: $ 1,315.29
-  10,000,000 visits: $6,577.52,	  with cloudfront: $13,155.03
+This script will generate a set of zoom-specific files with tilestache-seed
+commands from a bounding box file.
 
-(Assumption: Each map visitor will request 200 tiles (load map, pan pan pan pan pan)
-(Note: CloudFront is a distributed content delivery network that makes viewing your tiles faster...
-	Amazon charges once for getting it out of the S3 bucket and into CF again for the CF view...
-	If all the views are in the same spot, 1/2 the CF cost listed here. If viewing many random
-	places,this value.)
+    python seed_parser.py -t '-c /usr/local/tilefarm/gunicorn/tilestache-watercolor.cfg -l watercolor ' -b 'twitter_bbox.tsv'
+
+##countTiles
+
+###Usage:
+
+    python countTiles.py
+
+Default output for US (excluding Alaska and Hawaii):
+
+    Geographic area:
+        -126.900000	    left most Longitude     (minLong)
+          22.200000	    bottom most Latitude    (minLat)
+         -67.200000	    right most Longitude    (maxLong)
+          50.000000	    top most Latitude       (maxLat)
+    Zoom coverage:
+        4	least detailed zoom
+        14	most detailed zoom
+    Total tiles:
+        5,799,459 > 10,000,000
+    
+    SETUP cost: $71.74
+    (One time cost: $13.75 storage, $57.99 posting)
+    (Note: If there is a data update, apply this setup cost again.)
+    
+    MONTHLY viewing costs:
+          10,000 visits: $    6.46,   with cloudfront: $    12.92
+         250,000 visits: $  164.32,   with cloudfront: $   328.64
+       1,000,000 visits: $  657.64,   with cloudfront: $ 1,315.29
+      10,000,000 visits: $6,577.52,	  with cloudfront: $13,155.03
+    
+    (Assumption: Each map visitor will request 200 tiles (load map, pan pan pan pan pan)
+    (Note: CloudFront is a distributed content delivery network that makes viewing your tiles faster...
+        Amazon charges once for getting it out of the S3 bucket and into CF again for the CF view...
+        If all the views are in the same spot, 1/2 the CF cost listed here. If viewing many random
+        places,this value.)
